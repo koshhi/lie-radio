@@ -1,0 +1,9 @@
+@function parse-int($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+$rem-size-int: parse-int($rem-size);
+
+@function units($n) {
+  @return $n * ( 4/$rem-size-int ) * 1rem;
+}

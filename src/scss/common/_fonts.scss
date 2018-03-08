@@ -1,0 +1,312 @@
+$bureauGrotesque-path: "./src/fonts/bureau-grotesque" !default;
+$suisseWorks-path: "./src/fonts/suisse-works" !default;
+$suisseInt-path: "./src/fonts/suisse-int-condensed" !default;
+
+
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('#{$bureauGrotesque-path}/BureauGrotesque-SevenNine.eot');
+//     src: url('#{$bureauGrotesque-path}/BureauGrotesque-SevenNine.eot?#iefix') format('embedded-opentype'),
+//         url('#{$bureauGrotesque-path}/BureauGrotesque-SevenNine.woff2') format('woff2'),
+//         url('#{$bureauGrotesque-path}/BureauGrotesque-SevenNine.woff') format('woff'),
+//         url('#{$bureauGrotesque-path}/BureauGrotesque-SevenNine.ttf') format('truetype'),
+//         url('#{$bureauGrotesque-path}/BureauGrotesque-SevenNine.svg#BureauGrotesque-SevenNine') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-FiveFive.eot');
+//     src: url('BureauGrotesque-FiveFive.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-FiveFive.woff2') format('woff2'),
+//         url('BureauGrotesque-FiveFive.woff') format('woff'),
+//         url('BureauGrotesque-FiveFive.ttf') format('truetype'),
+//         url('BureauGrotesque-FiveFive.svg#BureauGrotesque-FiveFive') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-FiveOne.eot');
+//     src: url('BureauGrotesque-FiveOne.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-FiveOne.woff2') format('woff2'),
+//         url('BureauGrotesque-FiveOne.woff') format('woff'),
+//         url('BureauGrotesque-FiveOne.ttf') format('truetype'),
+//         url('BureauGrotesque-FiveOne.svg#BureauGrotesque-FiveOne') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-ThreeOne.eot');
+//     src: url('BureauGrotesque-ThreeOne.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-ThreeOne.woff2') format('woff2'),
+//         url('BureauGrotesque-ThreeOne.woff') format('woff'),
+//         url('BureauGrotesque-ThreeOne.ttf') format('truetype'),
+//         url('BureauGrotesque-ThreeOne.svg#BureauGrotesque-ThreeOne') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-OneOne.eot');
+//     src: url('BureauGrotesque-OneOne.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-OneOne.woff2') format('woff2'),
+//         url('BureauGrotesque-OneOne.woff') format('woff'),
+//         url('BureauGrotesque-OneOne.ttf') format('truetype'),
+//         url('BureauGrotesque-OneOne.svg#BureauGrotesque-OneOne') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque-ThreeSeven';
+//     src: url('BureauGrotesque-ThreeSeven.eot');
+//     src: url('BureauGrotesque-ThreeSeven.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-ThreeSeven.woff2') format('woff2'),
+//         url('BureauGrotesque-ThreeSeven.woff') format('woff'),
+//         url('BureauGrotesque-ThreeSeven.ttf') format('truetype'),
+//         url('BureauGrotesque-ThreeSeven.svg#BureauGrotesque-ThreeSeven') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-ThreeFive.eot');
+//     src: url('BureauGrotesque-ThreeFive.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-ThreeFive.woff2') format('woff2'),
+//         url('BureauGrotesque-ThreeFive.woff') format('woff'),
+//         url('BureauGrotesque-ThreeFive.ttf') format('truetype'),
+//         url('BureauGrotesque-ThreeFive.svg#BureauGrotesque-ThreeFive') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-ThreeThree.eot');
+//     src: url('BureauGrotesque-ThreeThree.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-ThreeThree.woff2') format('woff2'),
+//         url('BureauGrotesque-ThreeThree.woff') format('woff'),
+//         url('BureauGrotesque-ThreeThree.ttf') format('truetype'),
+//         url('BureauGrotesque-ThreeThree.svg#BureauGrotesque-ThreeThree') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'BureauGrotesque';
+    src: url('#{$bureauGrotesque-path}/BureauGrotesque-OneFive.eot');
+    src: url('#{$bureauGrotesque-path}/BureauGrotesque-OneFive.eot?#iefix') format('embedded-opentype'),
+        url('#{$bureauGrotesque-path}/BureauGrotesque-OneFive.woff2') format('woff2'),
+        url('#{$bureauGrotesque-path}/BureauGrotesque-OneFive.woff') format('woff'),
+        url('#{$bureauGrotesque-path}/BureauGrotesque-OneFive.ttf') format('truetype'),
+        url('#{$bureauGrotesque-path}/BureauGrotesque-OneFive.svg#BureauGrotesque-OneFive') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'BureauGrotesque-FiveThree';
+//     src: url('BureauGrotesque-FiveThree.eot');
+//     src: url('BureauGrotesque-FiveThree.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-FiveThree.woff2') format('woff2'),
+//         url('BureauGrotesque-FiveThree.woff') format('woff'),
+//         url('BureauGrotesque-FiveThree.ttf') format('truetype'),
+//         url('BureauGrotesque-FiveThree.svg#BureauGrotesque-FiveThree') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque-OneThree';
+//     src: url('BureauGrotesque-OneThree.eot');
+//     src: url('BureauGrotesque-OneThree.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-OneThree.woff2') format('woff2'),
+//         url('BureauGrotesque-OneThree.woff') format('woff'),
+//         url('BureauGrotesque-OneThree.ttf') format('truetype'),
+//         url('BureauGrotesque-OneThree.svg#BureauGrotesque-OneThree') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'BureauGrotesque';
+//     src: url('BureauGrotesque-OneSeven.eot');
+//     src: url('BureauGrotesque-OneSeven.eot?#iefix') format('embedded-opentype'),
+//         url('BureauGrotesque-OneSeven.woff2') format('woff2'),
+//         url('BureauGrotesque-OneSeven.woff') format('woff'),
+//         url('BureauGrotesque-OneSeven.ttf') format('truetype'),
+//         url('BureauGrotesque-OneSeven.svg#BureauGrotesque-OneSeven') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url('#{$bureauGrotesque-path}/InterUI-Regular.eot');
+//   src:
+//     url('#{$bureauGrotesque-path}/InterUI-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('#{$bureauGrotesque-path}/InterUI-Regular.woff2') format('woff2'),
+//     url('#{$bureauGrotesque-path}/InterUI-Regular.woff') format('woff'),
+//     url('#{$bureauGrotesque-path}/InterUI-Regular.ttf') format('truetype');
+//   font-weight: 400;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url('#{$bureauGrotesque-path}/InterUI-Medium.eot');
+//   src:
+//     url('#{$bureauGrotesque-path}/InterUI-Medium.eot?#iefix') format('embedded-opentype'),
+//     url('#{$bureauGrotesque-path}/InterUI-Medium.woff2') format('woff2'),
+//     url('#{$bureauGrotesque-path}/InterUI-Medium.woff') format('woff'),
+//     url('#{$bureauGrotesque-path}/InterUI-Medium.ttf') format('truetype');
+//   font-weight: 500;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url('#{$bureauGrotesque-path}/InterUI-Bold.eot');
+//   src:
+//     url('#{$bureauGrotesque-path}/InterUI-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$bureauGrotesque-path}/InterUI-Bold.woff2') format('woff2'),
+//     url('#{$bureauGrotesque-path}/InterUI-Bold.woff') format('woff'),
+//     url('#{$bureauGrotesque-path}/InterUI-Bold.ttf') format('truetype');
+//   font-weight: 700;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url('#{$bureauGrotesque-path}/InterUI-Black.eot');
+//   src:
+//     url('#{$bureauGrotesque-path}/InterUI-Black.eot?#iefix') format('embedded-opentype'),
+//     url('#{$bureauGrotesque-path}/InterUI-Black.woff2') format('woff2'),
+//     url('#{$bureauGrotesque-path}/InterUI-Black.woff') format('woff'),
+//     url('#{$bureauGrotesque-path}/InterUI-Black.ttf') format('truetype');
+//   font-weight: 800;
+// }
+//
+// @font-face {
+//   font-family: 'Gordita';
+//   src: url('#{$gordita-path}/Gordita-Bold.eot');
+//   src:
+//     url('#{$gordita-path}/Gordita-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$gordita-path}/Gordita-Bold.woff2') format('woff2'),
+//     url('#{$gordita-path}/Gordita-Bold.woff') format('woff'),
+//     url('#{$gordita-path}/Gordita-Bold.ttf') format('truetype');
+//   font-weight: 700;
+// }
+//
+// @font-face {
+//   font-family: 'Gordita';
+//   src: url('#{$gordita-path}/Gordita-Black.eot');
+//   src:
+//     url('#{$gordita-path}/Gordita-Black.eot?#iefix') format('embedded-opentype'),
+//     url('#{$gordita-path}/Gordita-Black.woff2') format('woff2'),
+//     url('#{$gordita-path}/Gordita-Black.woff') format('woff'),
+//     url('#{$gordita-path}/Gordita-Black.ttf') format('truetype');
+//   font-weight: 800;
+// }
+
+
+// SuisseWorks
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}//SuisseWorks-Regular.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Regular.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-Regular.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-Regular.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Regular.svg#SuisseWorks-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-RegularItalic.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-RegularItalic.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-RegularItalic.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-RegularItalic.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-RegularItalic.svg#SuisseWorks-RegularItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-Book.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-Book.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Book.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-Book.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-Book.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Book.svg#SuisseWorks-Book') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-BookItalic.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-BookItalic.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-BookItalic.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-BookItalic.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-BookItalic.svg#SuisseWorks-BookItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-Medium.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-Medium.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Medium.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-Medium.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-Medium.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Medium.svg#SuisseWorks-Medium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-MediumItalic.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-MediumItalic.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-MediumItalic.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-MediumItalic.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-MediumItalic.svg#SuisseWorks-MediumItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-Bold.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Bold.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-Bold.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-Bold.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('#{$suisseWorks-path}/SuisseWorks-BoldItalic.eot');
+    src: url('#{$suisseWorks-path}/SuisseWorks-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('#{$suisseWorks-path}/SuisseWorks-BoldItalic.woff2') format('woff2'),
+        url('#{$suisseWorks-path}/SuisseWorks-BoldItalic.woff') format('woff'),
+        url('#{$suisseWorks-path}/SuisseWorks-BoldItalic.ttf') format('truetype'),
+        url('#{$suisseWorks-path}/SuisseWorks-BoldItalic.svg#SuisseWorks-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}

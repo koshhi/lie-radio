@@ -1,0 +1,133 @@
+$font-text:    'SuisseWorks', sans-serif;
+$font-display: 'BureauGrotesque', sans-serif;
+
+$rem-size: 16px;
+
+$fw-regular:   400;
+$fw-medium:    500;
+$fw-bold:      700;
+$fw-black:     800;
+
+$letter-spacing: 0.1em;
+
+// Font display
+$fs-display-desktop-hg:       3rem; // 48px
+$fs-display-mobile-hg:      1.5rem; // 24px
+$fs-display-desktop-xxl:  1.875rem; // 30px
+$fs-display-mobile-xxl:   1.875rem; // 30px
+$fs-display-desktop-xl:   1.625rem; // 26px
+$fs-display-mobile-xl:    1.625rem; // 26px
+$fs-display-desktop-lg:     1.5rem; // 24px
+$fs-display-mobile-lg:      1.5rem; // 24px
+$fs-display-desktop-md:    1.25rem; // 20px
+$fs-display-mobile-md:     1.25rem; // 20px
+$fs-display-desktop-sm:       1rem; // 16px
+$fs-display-mobile-sm:        1rem; // 16px
+$fs-display-desktop-xs:   0.875rem; // 14px
+$fs-display-mobile-xs:    0.875rem; // 14px
+$fs-display-desktop-xxs:   0.75rem; // 12px
+$fs-display-mobile-xxs:    0.75rem; // 12px
+
+$lh-display-desktop-hg:   1.333333; // 64px
+$lh-display-mobile-hg:    1.333333; // 32px
+$lh-display-desktop-xxl:  1.666666; // 56px
+$lh-display-mobile-xxl:   1.666666; // 56px
+$lh-display-desktop-xl:   1.692307; // 44px
+$lh-display-mobile-xl:    1.692307; // 44px
+$lh-display-desktop-lg:        1.5; // 36px
+$lh-display-mobile-lg:         1.5; // 36px
+$lh-display-desktop-md:        1.8; // 24px
+$lh-display-mobile-md:         1.8; // 24px
+$lh-display-desktop-sm:       1.75; // 28px
+$lh-display-mobile-sm:        1.75; // 28px
+$lh-display-desktop-xs:   1.428571; // 20px
+$lh-display-mobile-xs:    1.428571; // 20px
+$lh-display-desktop-xxs:  1.333333; // 16px
+$lh-display-mobile-xxs:   1.333333; // 16px
+
+$font-display-sizes: (
+  hg_desktop:  $fs-display-desktop-hg,
+  hg_mobile:   $fs-display-mobile-hg,
+  xxl_desktop: $fs-display-desktop-xxl,
+  xxl_mobile:  $fs-display-mobile-xxl,
+  xl_desktop:  $fs-display-desktop-xl,
+  xl_mobile:   $fs-display-mobile-xl,
+  lg_desktop:  $fs-display-desktop-lg,
+  lg_mobile:   $fs-display-mobile-lg,
+  md_desktop:  $fs-display-desktop-md,
+  md_mobile:   $fs-display-mobile-md,
+  sm_desktop:  $fs-display-desktop-sm,
+  sm_mobile:   $fs-display-mobile-sm,
+  xs_desktop:  $fs-display-desktop-xs,
+  xs_mobile:   $fs-display-mobile-xs,
+  xxs_desktop: $fs-display-desktop-xxs,
+  xxs_mobile:  $fs-display-mobile-xxs,
+);
+
+$line-display-heights: (
+  hg_desktop:  $lh-display-desktop-hg,
+  hg_mobile:   $lh-display-mobile-hg,
+  xxl_desktop: $lh-display-desktop-xxl,
+  xxl_mobile:  $lh-display-mobile-xxl,
+  xl_desktop:  $lh-display-desktop-xl,
+  xl_mobile:   $lh-display-mobile-xl,
+  lg_desktop:  $lh-display-desktop-lg,
+  lg_mobile:   $lh-display-mobile-lg,
+  md_desktop:  $lh-display-desktop-md,
+  md_mobile:   $lh-display-mobile-md,
+  sm_desktop:  $lh-display-desktop-sm,
+  sm_mobile:   $lh-display-mobile-sm,
+  xs_desktop:  $lh-display-desktop-xs,
+  xs_mobile:   $lh-display-mobile-xs,
+  xxs_desktop: $lh-display-desktop-xxs,
+  xxs_mobile:  $lh-display-mobile-xxs,
+);
+
+// Font text
+$fs-text-desktop-xl:    1.25rem; // 20px
+$fs-text-mobile-xl:     1.25rem; // 20px
+$fs-text-desktop-lg:   1.125rem; // 18px
+$fs-text-mobile-lg:    1.125rem; // 18px
+$fs-text-desktop-md:       1rem; // 16px
+$fs-text-mobile-md:        1rem; // 16px
+$fs-text-desktop-sm:   0.875rem; // 14px
+$fs-text-mobile-sm:    0.875rem; // 14px
+$fs-text-desktop-xs:   0.625rem; // 10px
+$fs-text-mobile-xs:    0.625rem; // 10px
+
+$lh-text-desktop-xl:        1.2; // 24px
+$lh-text-mobile-xl:         1.2; // 24px
+$lh-text-desktop-lg:   1.222222; // 22px
+$lh-text-mobile-lg:    1.222222; // 22px
+$lh-text-desktop-md:        1.5; // 24px
+$lh-text-mobile-md:         1.5; // 24px
+$lh-text-desktop-sm:   1.714285; // 20px
+$lh-text-mobile-sm:    1.714285; // 20px
+$lh-text-desktop-xs:        1.2; // 12px
+$lh-text-mobile-xs:         1.2; // 12px
+
+$font-text-sizes: (
+  xl_desktop:  $fs-text-desktop-xl,
+  xl_mobile:   $fs-text-mobile-xl,
+  lg_desktop:  $fs-text-desktop-lg,
+  lg_mobile:   $fs-text-mobile-lg,
+  md_desktop:  $fs-text-desktop-md,
+  md_mobile:   $fs-text-mobile-md,
+  sm_desktop:  $fs-text-desktop-sm,
+  sm_mobile:   $fs-text-mobile-sm,
+  xs_desktop:  $fs-text-desktop-xs,
+  xs_mobile:   $fs-text-mobile-xs,
+);
+
+$line-text-heights: (
+  xl_desktop:  $lh-text-desktop-xl,
+  xl_mobile:   $lh-text-mobile-xl,
+  lg_desktop:  $lh-text-desktop-lg,
+  lg_mobile:   $lh-text-mobile-lg,
+  md_desktop:  $lh-text-desktop-md,
+  md_mobile:   $lh-text-mobile-md,
+  sm_desktop:  $lh-text-desktop-sm,
+  sm_mobile:   $lh-text-mobile-sm,
+  xs_desktop:  $lh-text-desktop-xs,
+  xs_mobile:   $lh-text-mobile-xs,
+);

@@ -1,0 +1,35 @@
+/*
+  You can use import statements to include partials:
+ */
+@import "common/variables.scss";
+@import "common/fonts.scss";
+@import "common/functions.scss";
+@import "components/reset.scss";
+@import "components/header.scss";
+
+
+/*
+  Or add your statements here:
+ */
+body{
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.main {
+  p {
+    font-family: 'SuisseWorks';
+    font-weight: 400;
+  }
+}
+
+.mixcloud-footer-widget-body-wrapper .my-fixed-element {
+  bottom: 30px;
+}
+
+.mixcloud-footer-widget-container {
+  .widget-header {
+    background-color: red !important;
+  }
+}
