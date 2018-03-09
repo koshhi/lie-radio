@@ -1,0 +1,36 @@
+@mixin animated($duration: 500ms, $name:fadeIn, $delay:0s) {
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-name: $name;
+  animation-delay: $delay;
+}
+
+@mixin flex-container($direction:row, $wrap:nowrap, $justify:space-between, $align: center) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin text($family, $size) {
+  @if ($family == 'display') {
+    font-size: map-get($font-display-sizes, $size);
+    line-height: map-get($line-display-heights, $size);
+  }
+  @else if ($family == 'text') {
+    font-size: map-get($font-text-sizes, $size);
+    line-height: map-get($line-text-heights, $size);
+  }
+}
+
+@mixin transition($property:color, $speed:300ms, $ease:ease) {
+  transition: $property $speed $ease;
+}
+
+@mixin truncate($width:100%, $display:block) {
+  display: $display;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

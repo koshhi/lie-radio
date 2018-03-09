@@ -9,6 +9,9 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import autoprefixer from "autoprefixer";
+import sass from "gulp-sass";
+import cssNano from "gulp-cssnano";
 
 const browserSync = BrowserSync.create();
 
@@ -26,11 +29,24 @@ gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArg
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+  gulp.src("./src/scss/*.scss")
+    .pipe(sass({
+      outputStyle:  "nested",
+      precision: 10,
+      includePaths: ["node_modules"],
+    }))
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(cssNano())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
+// gulp.task("css", () => (
+//   gulp.src("./src/css/*.css")
+//     .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+//     .pipe(gulp.dest("./dist/css"))
+//     .pipe(browserSync.stream())
+// ));
 
 // Compile Javascript
 gulp.task("js", (cb) => {
@@ -63,7 +79,7 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/scss/**/*.scss", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
@@ -86,3 +102,12 @@ function buildSite(cb, options, environment = "development") {
     }
   });
 }
+
+//Watchers
+gulp.task('watch-css', function() {
+    return gulp.watch(
+        "./src/scss/**/*.scss",
+        {interval: 1000, read: false },
+        ['css']
+    ).on('change', browserSync.reload);
+});

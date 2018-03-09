@@ -1,0 +1,3 @@
+.home-fold {
+  @include flex-container ($direction: row, $justify: center, $align: center);
+}

@@ -1,9 +1,27 @@
-{{ partial "header" . }}
+{{ partial "head" . }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+<main class="page__home">
+  <header>
+    <nav class="navigation primary-navigation pv-sm">
+      <a href="/">
+        <img src="./lie-logo.svg" alt="Lie">
+      </a>
+    </nav>
+  </header>
+  <section class="home-fold">
+    <h1>STREAMING</h1>
+  </section>
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+  <section class="upcoming-events">
+    <h1>Proximos eventos</h1>
+    <div class="events">
+      <div class="event">
+        <h2 class="event__title mb-sm">A Chill & Puff</h2>
+        <p class="event__subtitle mb-xs">30 DICIEMBRE | 18:30 · 23:00 | WAVE SHOEGAZE POST-PUNK</p>
+        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
+      </div>
+    </div>
+  </section>
+</main>
 
 {{ partial "footer" . }}

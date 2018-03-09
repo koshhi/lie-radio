@@ -1,0 +1,25 @@
+.events {
+
+}
+
+.event {
+  @include flex-container ($direction: column, $justify: flex-start, $align: center);
+  .event__title {
+    font-family: "BureauGrotesque";
+    font-weight: 500;
+    font-size: units(12);
+    text-transform: uppercase;
+  }
+
+  .event__subtitle {
+    font-family: "SuisseCondensed";
+    font-weight: 400;
+    font-size: units(4);
+  }
+
+  .event__description {
+    font-family: "SuisseWorks";
+    font-weight: 400;
+    font-size: units(4);
+  }
+}

@@ -1,35 +1,28 @@
 /*
   You can use import statements to include partials:
  */
-@import "common/variables.scss";
-@import "common/fonts.scss";
-@import "common/functions.scss";
-@import "components/reset.scss";
-@import "components/header.scss";
 
+ //COMMONS
+@import "commons/variables";
+@import "commons/mixins";
+@import "commons/functions";
+@import "commons/grid";
+@import "commons/fonts";
+@import "commons/animations";
+@import "commons/typography";
+@import "commons/utilities";
 
-/*
-  Or add your statements here:
- */
-body{
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center;
-}
+// Base
+@import "commons/reset";
 
-.main {
-  p {
-    font-family: 'SuisseWorks';
-    font-weight: 400;
-  }
-}
+//COMPONENTS
+@import "components/events";
+@import "components/header";
+@import "components/navigation";
 
-.mixcloud-footer-widget-body-wrapper .my-fixed-element {
-  bottom: 30px;
-}
+//SECTIONS
+@import "sections/fold";
+@import "sections/upcoming-events";
 
-.mixcloud-footer-widget-container {
-  .widget-header {
-    background-color: red !important;
-  }
-}
+//PAGES
+@import "pages/page-home";

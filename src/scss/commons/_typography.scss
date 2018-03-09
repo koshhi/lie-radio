@@ -1,0 +1,87 @@
+[class^='fs-display-'],
+[class*=' fs-display-'] {
+  font-family: $font-display;
+}
+
+[class^='fs-text-'],
+[class*=' fs-text-'] {
+  font-family: $font-text;
+}
+
+.fs-display-hg {
+  @include text('display', 'hg_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'hg_desktop'); }
+}
+
+.fs-display-xxl {
+  @include text('display', 'xxl_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'xxl_desktop'); }
+}
+
+.fs-display-xl {
+  @include text('display', 'xl_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'xl_desktop'); }
+}
+
+.fs-display-lg {
+  @include text('display', 'lg_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'lg_desktop'); }
+}
+
+.fs-display-md {
+  @include text('display', 'md_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'md_desktop'); }
+}
+
+.fs-display-sm {
+  @include text('display', 'sm_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'sm_desktop'); }
+}
+
+.fs-display-xs {
+  @include text('display', 'xs_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'xs_desktop'); }
+}
+
+.fs-display-xxs {
+  @include text('display', 'xxs_mobile');
+  @media #{$screen-sm-up} { @include text('display', 'xxs_desktop'); }
+}
+
+.fs-text-xl {
+  @include text('text', 'xl_mobile');
+  @media #{$screen-sm-up} { @include text('text', 'xl_desktop'); }
+}
+
+.fs-text-lg {
+  @include text('text', 'lg_mobile');
+  @media #{$screen-sm-up} { @include text('text', 'lg_desktop'); }
+}
+
+.fs-text-md {
+  @include text('text', 'md_mobile');
+  @media #{$screen-sm-up} { @include text('text', 'md_desktop'); }
+}
+
+.fs-text-sm {
+  @include text('text', 'sm_mobile');
+  @media #{$screen-sm-up} { @include text('text', 'sm_desktop'); }
+}
+
+.fs-text-xs {
+  @include text('text', 'xs_mobile');
+  @media #{$screen-sm-up} { @include text('text', 'xs_desktop'); }
+}
+
+.fw-regular { font-weight: $fw-regular; }
+.fw-medium { font-weight: $fw-medium; }
+.fw-bold { font-weight: $fw-bold; }
+.fw-black { font-weight: $fw-black; }
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+}
+
+.ta-center { text-align: center; }
+.ta-right { text-align: right; }
