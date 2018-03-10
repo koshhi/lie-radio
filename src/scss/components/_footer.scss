@@ -20,5 +20,9 @@
     font-weight: 500;
     font-size: units(5);
     text-transform: uppercase;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
