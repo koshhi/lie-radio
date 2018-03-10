@@ -1,3 +1,7 @@
+.upcoming-programs,
 .upcoming-events {
+  padding-top: units(20);
+  padding-bottom: units(20);
+
   @include flex-container ($direction: column, $justify: center, $align: center);
 }

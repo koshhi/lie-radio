@@ -3,7 +3,14 @@
 }
 
 .event {
+  padding-bottom: units(16);
+
   @include flex-container ($direction: column, $justify: flex-start, $align: center);
+
+  &:last-of-type {
+    padding-bottom: units(0);
+  }
+
   .event__title {
     font-family: "BureauGrotesque";
     font-weight: 500;
@@ -15,6 +22,8 @@
     font-family: "SuisseCondensed";
     font-weight: 400;
     font-size: units(4);
+    text-transform: uppercase;
+    margin-bottom: units(2)
   }
 
   .event__description {
