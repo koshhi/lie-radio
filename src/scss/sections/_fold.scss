@@ -1,3 +1,29 @@
 .home-fold {
-  @include flex-container ($direction: row, $justify: center, $align: center);
+  padding: 0 2rem;
+
+  .social-media {
+    background-color: white;
+    padding: 2rem 0;
+    @include flex-container ($direction: row, $wrap: wrap, $justify: center, $align: center);
+
+    & > li {
+      margin-right: units(4);
+
+      &:last-of-type {
+        margin-right: units(0);
+      }
+    }
+  }
+
+  .social-link {
+    color: black;
+    font-family: "BureauGrotesque";
+    font-weight: 500;
+    font-size: units(10);
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }

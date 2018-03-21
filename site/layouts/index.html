@@ -1,106 +1,116 @@
-{{ partial "head" . }}
-
+{{ define "main" }}
 <main class="page__home">
-  <header>
-    <nav class="navigation primary-navigation pv-sm">
-      <a href="/">
-        <img src="./lie-logo.svg" alt="Lie">
-      </a>
-    </nav>
-  </header>
+  {{ partial "header" . }}
   <section class="home-fold">
-    <!-- <h1 class="fs-display-xl uppercase">STREAMING</h1> -->
-    <!-- <div id="player"></div> -->
-
-    <!-- //EMBED YOUTUBE STREAMING//-->
-    <div style="position:relative;height:0;padding-bottom:56.25%">
-      <iframe width="560" height="349" src="https://www.youtube.com/embed/live_stream?channel=UCuDDLN0G6kPvB0nkh_pZebg" frameborder="0" allowfullscreen></iframe>
+    <div>
+        <div class=>
+          <div class="embed-responsive embed-responsive-16by9">
+           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/live_stream?channel=UCuDDLN0G6kPvB0nkh_pZebg"></iframe>
+          </div>
+        </div>
     </div>
+    <ul class="social-media">
+      <li><a class="social-link" href="https://www.instagram.com/lieradio/">Instagram</a></li>
+      <li><a class="social-link" href="https://www.facebook.com/lieradio/">Facebook</a></li>
+      <li><a class="social-link" href="https://www.mixcloud.com/lieradio/">Mixcloud</a></li  >
+      <li><a class="social-link" href="https://soundcloud.com/lieradio">Soundcloud</a></li>
+    </ul>
   </section>
 
   <section class="upcoming-programs">
-    <h1 class="fs-display-xl uppercase mb-md color-yellow">Próximos programas</h1>
+    <h1 class="fs-display-xl uppercase mb-xl">Próximos programas</h1>
     <div class="events">
+
       <div class="event">
-        <h2 class="event__title mb-sm">La Piñata</h2>
-        <p class="event__subtitle mb-xs">12 marzo | 20:00 · 21:00 | folklore mediterranean world</p>
-        <p class="event__description">Elena Córdoba presenta La Piñata. Sorpresa.</p>
+        <h2 class="event__title mb-sm">EL BOCADILLO GOD</h2>
+        <div class="event__subtitle mb-xs">
+          <p class="event__date">22 MARZO</p>
+          <span>|</span>
+          <p class="event__hour">18:00 · 19:00</p>
+          <span>|</span>
+          <p class="event__tags">
+            <span>ELECTRONIC</span>
+            <span>POST-PUNK</span>
+            <span>PSYCHEDELIC</span>
+          <p>
+        </div>
+        <p class="event__description">Banda sonora ideal para una tarde perdida. Los jueves, Encarta reza al dios del bocadillo.</p>
       </div>
+
       <div class="event">
-        <h2 class="event__title mb-sm">Low</h2>
-        <p class="event__subtitle mb-xs">15 marzo | 19:00 · 20:00 | ambient drone post-punk</p>
-        <p class="event__description">Boni G. Miranda presenta Low.</p>
+        <h2 class="event__title mb-sm">LA HORA DE NUESTRA SEÑORA</h2>
+        <div class="event__subtitle mb-xs">
+          <p class="event__date">1 ABRIL</p>
+          <span>|</span>
+          <p class="event__hour">16:00 · 17:00</p>
+          <span>|</span>
+          <p class="event__tags">
+            <span>INDUSTRIAL</span>
+            <span>WAVE</span>
+            <span>POST-PUNK</span>
+          <p>
+        </div>
+        <p class="event__description">Discos de Nuestra Señora hacen su misa. Material crudo.</p>
       </div>
+
       <div class="event">
-        <h2 class="event__title mb-sm">Encarta</h2>
-        <p class="event__subtitle mb-xs">22 marzo | 18:00 · 19:00 | electronic beats shoegaze</p>
-        <p class="event__description">Encarta presenta Encarta.</p>
-      </div>
-      <div class="event">
-        <h2 class="event__title mb-sm">La Hora de Nuestra Señora</h2>
-        <p class="event__subtitle mb-xs">31 marzo | 16:00 · 17:00 | industrial wave post-punk electro</p>
-        <p class="event__description">Discos de Nuestra Señora hacen su misa.</p>
+        <h2 class="event__title mb-sm">indigo</h2>
+        <div class="event__subtitle mb-xs">
+          <p class="event__date">4 ABRIL</p>
+          <span>|</span>
+          <p class="event__hour">19:00 · 20:00</p>
+          <span>|</span>
+          <p class="event__tags">
+            <span>WAVE</span>
+            <span>DRONE</span>
+            <span>POST-PUNK</span>
+          <p>
+        </div>
+        <p class="event__description">Discos de Nuestra Señora hacen su misa. Material crudo.</p>
       </div>
     </div>
   </section>
 
   <section class="upcoming-events">
-    <h1 class="fs-display-xl uppercase mb-lg">Próximos eventos</h1>
-    <div class="events">
-      <div class="event">
-        <h2 class="event__title mb-sm">Ritual</h2>
-        <p class="event__subtitle mb-xs">24 marzo | 17:00 · 22:00 | ambient mediterranean tribal</p>
-        <p class="event__description">Shibari y música ritual dedicada a las diosas</p>
-      </div>
-      <div class="event">
-        <h2 class="event__title mb-sm">A Chill & Puff</h2>
-        <p class="event__subtitle mb-xs">8 abril | 16:00 · 22:00 | ambient drone fourth-world</p>
-        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
-      </div>
-      <div class="event">
-        <h2 class="event__title mb-sm">Barrio Abierto</h2>
-        <p class="event__subtitle mb-xs">5 mayo | 16:00 · 22:00 | WAVE SHOEGAZE POST-PUNK</p>
-        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
-      </div>
-      <div class="event">
-        <h2 class="event__title mb-sm">Caribe Mix</h2>
-        <p class="event__subtitle mb-xs">31 marzo | 16:00 · 22:00 | WAVE SHOEGAZE POST-PUNK</p>
-        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="upcoming-events">
-    <h1 class="fs-display-xl uppercase mb-lg">Proximos eventos</h1>
+    <h1 class="fs-display-xl uppercase mb-xl">Próximos eventos</h1>
     <div class="events">
 
       <div class="event">
-        <h2 class="event__title mb-sm">Ritual</h2>
-        <p class="event__subtitle mb-xs">24 marzo | 17:00 · 22:00 | ambient mediterranean tribal</p>
-        <p class="event__description">Shibari y música ritual dedicada a las diosas</p>
+        <h2 class="event__title mb-sm">ON AIR</h2>
+        <div class="event__subtitle mb-xs">
+          <p class="event__date">28 ABRIL</p>
+          <span>|</span>
+          <p class="event__hour">12:00 · 22:00</p>
+          <span>|</span>
+          <p class="event__tags">
+            <span>AFRICAN</span>
+            <span>LATIN</span>
+            <span>ELECTRONICA</span>
+          <p>
+        </div>
+        <p class="event__description">Música, talleres y merequetengue. Love Call & LIE Radio en el Parque del Alamillo.</p>
       </div>
 
       <div class="event">
-        <h2 class="event__title mb-sm">A Chill & Puff</h2>
-        <p class="event__subtitle mb-xs">8 abril | 16:00 · 22:00 | ambient drone fourth-world</p>
-        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
+        <h2 class="event__title mb-sm">BARRIO ABIERTO</h2>
+        <div class="event__subtitle mb-xs">
+          <p class="event__date">5 MAYO</p>
+          <span>|</span>
+          <p class="event__hour">12:00 · 23:00</p>
+          <span>|</span>
+          <p class="event__tags">
+            <span>LATIN</span>
+            <span>FOLKLORE</span>
+            <span>HITS</span>
+          <p>
+        </div>
+        <p class="event__description">XI Jornadas de Puertas Abiertas en el Casco Norte de Sevilla</p>
       </div>
 
-      <div class="event">
-        <h2 class="event__title mb-sm">Barrio Abierto</h2>
-        <p class="event__subtitle mb-xs">5 mayo | 16:00 · 22:00 | WAVE SHOEGAZE POST-PUNK</p>
-        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
-      </div>
-
-      <div class="event">
-        <h2 class="event__title mb-sm">Caribe Mix</h2>
-        <p class="event__subtitle mb-xs">31 marzo | 16:00 · 22:00 | WAVE SHOEGAZE POST-PUNK</p>
-        <p class="event__description">Jornada de ambient en chill constante. No bombos, no prisa, no…</p>
-      </div>
     </div>
   </section>
-  {{ partial "contact" . }}
+  <!-- {{ partial "contact" . }} -->
   <!-- {{ partial "youtube-player" . }} -->
 
 </main>
-{{ partial "footer" . }}
+{{ end }}

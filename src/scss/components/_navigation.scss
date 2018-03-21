@@ -2,4 +2,8 @@
   &.primary-navigation {
     @include flex-container ($direction: row, $justify: center, $align: center);
   }
+
+  .logo {
+    height: 40px;
+  }
 }

@@ -14,21 +14,51 @@
   .event__title {
     font-family: "BureauGrotesque";
     font-weight: 500;
-    font-size: units(12);
+    font-size: units(16);
     text-transform: uppercase;
   }
 
   .event__subtitle {
-    font-family: "SuisseCondensed";
-    font-weight: 400;
-    font-size: units(4);
-    text-transform: uppercase;
-    margin-bottom: units(2)
+    margin-bottom: units(2);
+    @include flex-container ($direction: row, $justify: center, $align: center);
+
+    .event__date,
+    .event__hour {
+      font-family: "SuisseCondensed";
+      font-weight: 400;
+      font-size: units(4);
+      text-transform: uppercase;
+      margin-right: units(4);
+    }
+
+    .event__hour {
+      margin-left: units(4);
+    }
+
+    .event__tags {
+      margin-right: units(0);
+      margin-left: units(4);
+
+      & > span {
+        font-family: "SuisseCondensed";
+        font-weight: 400;
+        font-size: units(4);
+        text-transform: uppercase;
+        margin-right: units(2);
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   .event__description {
     font-family: "SuisseWorks";
     font-weight: 400;
     font-size: units(4);
+    max-width: 50rem;
+    text-align: center;
+    line-height: 1.5;
   }
 }

@@ -1,9 +1,27 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "LIE RADIO"
+
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "/"
+canonifyURLs = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  title = "this a title"
+  subtitle = "Hugo is Absurdly Fast!"
+  author = "John Doe"
+  eventDay = ""
+  eventHour = ""
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+# disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

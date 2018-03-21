@@ -40,6 +40,7 @@
     "gulp-watch": "^5.0.0",
     "hugo-bin": "^0.22.0",
     "imports-loader": "^0.7.1",
+    "mediaelement": "^4.2.8",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.0.0",
     "url-loader": "^0.6.2",
