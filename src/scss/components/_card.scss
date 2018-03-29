@@ -1,0 +1,60 @@
+.card {
+  .card__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card__title {
+    font-family: "BureauGrotesque";
+    font-weight: 500;
+    font-size: units(10);
+    text-transform: uppercase;
+  }
+
+  .card__subtitle {
+    margin-bottom: units(2);
+    @include flex-container ($direction: row, $justify: flex-start, $align: flex-start);
+  }
+
+  .card__date,
+  .card__hour {
+    font-family: "SuisseCondensed";
+    font-weight: 400;
+    font-size: units(4);
+    text-transform: uppercase;
+    margin-right: units(4);
+  }
+
+  .card__hour {
+    margin-left: units(4);
+  }
+
+  .card__tags {
+    margin-right: units(0);
+    margin-left: units(4);
+
+    & > span {
+      font-family: "SuisseCondensed";
+      font-weight: 400;
+      font-size: units(4);
+      text-transform: uppercase;
+      margin-right: units(2);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .card__description {
+    font-family: "SuisseWorks";
+    font-weight: 400;
+    font-size: units(4);
+    line-height: 1.5;
+  }
+
+  &.card--event {
+
+  }
+}
