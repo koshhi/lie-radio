@@ -1,115 +1,173 @@
 {{ define "main" }}
 <main class="page__home">
   {{ partial "header" . }}
-  <section class="home-fold">
-    <div>
-        <div class=>
-          <div class="embed-responsive embed-responsive-16by9">
-           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/live_stream?channel=UCuDDLN0G6kPvB0nkh_pZebg"></iframe>
+  <!-- {{ partial "video-streaming" . }} -->
+
+  <section class="upcoming upcoming--programs">
+    <div class="container container--medium pt-xl">
+
+      <h1 class="upcoming-title mb-xl ta-center">Próximos programas</h1>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="card card--event mb-xl">
+            <div class="card__image">
+              <img src="./images/horadenuestrasenora.jpg" alt="LA HORA DE NUESTRA SEÑORA">
+            </div>
+            <h2 class="card__title mv-sm">LA HORA DE NUESTRA SEÑORA</h2>
+            <div class="card__subtitle">
+              <div class="card__date">
+                <p class="card__day">1 ABRIL</p>
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__hour">16:00 · 17:00</p>
+              </div>
+              <div class="card__tags">
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__tag-list">
+                  <span class="card__tag">INDUSTRIAL</span>
+                  <span class="card__tag">wave</span>
+                  <span class="card__tag">POST-PUNK</span>
+                <p>
+              </div>
+            </div>
+            <p class="card__description">Discos de Nuestra Señora hacen su misa. Material crudo.</p>
           </div>
         </div>
-    </div>
-    <ul class="social-media">
-      <li><a class="social-link" href="https://www.instagram.com/lieradio/">Instagram</a></li>
-      <li><a class="social-link" href="https://www.facebook.com/lieradio/">Facebook</a></li>
-      <li><a class="social-link" href="https://www.mixcloud.com/lieradio/">Mixcloud</a></li  >
-      <li><a class="social-link" href="https://soundcloud.com/lieradio">Soundcloud</a></li>
-    </ul>
-  </section>
-
-  <section class="upcoming-programs">
-    <h1 class="fs-display-xl uppercase mb-xl">Próximos programas</h1>
-    <div class="events">
-
-      <div class="event">
-        <h2 class="event__title mb-sm">LA HORA DE NUESTRA SEÑORA</h2>
-        <div class="event__subtitle mb-xs">
-          <p class="event__date">1 ABRIL</p>
-          <span>|</span>
-          <p class="event__hour">16:00 · 17:00</p>
-          <span>|</span>
-          <p class="event__tags">
-            <span>INDUSTRIAL</span>
-            <span>WAVE</span>
-            <span>POST-PUNK</span>
-          <p>
+        <div class="col-sm-12 col-md-6">
+          <div class="card card--event mb-xl">
+            <div class="card__image">
+              <img src="./images/indigo.jpg" alt="indigo">
+            </div>
+            <h2 class="card__title mv-sm">INDIGO</h2>
+            <div class="card__subtitle">
+              <div class="card__date">
+                <p class="card__day">4 ABRIL</p>
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__hour">19:00 · 20:00</p>
+              </div>
+              <div class="card__tags">
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__tag-list">
+                  <span class="card__tag">WAVE</span>
+                  <span class="card__tag">DRONE</span>
+                  <span class="card__tag">POST-PUNK</span>
+                <p>
+              </div>
+            </div>
+            <p class="card__description">Drones punkis, guitarreos wave y ríos de kraut que se teñirán en distintas proporciones de índigo. Claros y oscuros seleccionados por Boni G. Miranda.</p>
+          </div>
         </div>
-        <p class="event__description">Discos de Nuestra Señora hacen su misa. Material crudo.</p>
-      </div>
-
-      <div class="event">
-        <h2 class="event__title mb-sm">indigo</h2>
-        <div class="event__subtitle mb-xs">
-          <p class="event__date">4 ABRIL</p>
-          <span>|</span>
-          <p class="event__hour">19:00 · 20:00</p>
-          <span>|</span>
-          <p class="event__tags">
-            <span>WAVE</span>
-            <span>DRONE</span>
-            <span>POST-PUNK</span>
-          <p>
+        <div class="col-sm-12 col-md-6">
+          <div class="card card--event mb-xl">
+            <div class="card__image">
+              <img src="./images/fem.jpg" alt="Fem">
+            </div>
+            <h2 class="card__title mv-sm">FEM</h2>
+            <div class="card__subtitle">
+              <div class="card__date">
+                <p class="card__day">9 ABRIL</p>
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__hour">18:00 · 19:00</p>
+              </div>
+              <div class="card__tags">
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__tag-list">
+                  <span class="card__tag">FOLKLORE</span>
+                  <span class="card__tag">EXPERIMENTAL</span>
+                  <span class="card__tag">WOMAN</span>
+                <p>
+              </div>
+            </div>
+            <p class="card__description">Espacio para visibilizar y escuchar a mujeres de todos los tiempos y estilos. Brujas, madres, hijas, cantantes, investigadoras, productoras, sanadoras, chamanas...</p>
+          </div>
         </div>
-        <p class="event__description">Boni G. Miranda</p>
-      </div>
-
-      <div class="event">
-        <h2 class="event__title mb-sm">EL BOCADILLO GOD</h2>
-        <div class="event__subtitle mb-xs">
-          <p class="event__date">12 ABRIL</p>
-          <span>|</span>
-          <p class="event__hour">18:00 · 19:30</p>
-          <span>|</span>
-          <p class="event__tags">
-            <span>ELECTRONIC</span>
-            <span>POST-PUNK</span>
-            <span>PSYCHEDELIC</span>
-          <p>
+        <div class="col-sm-12 col-md-6">
+          <div class="card card--event mb-xl mb-xl">
+            <div class="card__image">
+              <img src="./images/bocadillogod.jpg" alt="EL BOCADILLO GOD">
+            </div>
+            <h2 class="card__title mv-sm">EL BOCADILLO GOD</h2>
+            <div class="card__subtitle">
+              <div class="card__date">
+                <p class="card__day">12 ABRIL</p>
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__hour">18:00 · 19:30</p>
+              </div>
+              <div class="card__tags">
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__tag-list">
+                  <span class="card__tag">ELECTRONIC</span>
+                  <span class="card__tag">POST-PUNK</span>
+                  <span class="card__tag">PSYCHEDELIC</span>
+                <p>
+              </div>
+            </div>
+            <p class="card__description">Banda sonora ideal para una tarde perdida. Los jueves, Encarta reza al dios del bocadillo.</p>
+          </div>
         </div>
-        <p class="event__description">Banda sonora ideal para una tarde perdida. Los jueves, Encarta reza al dios del bocadillo.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="upcoming-events">
-    <h1 class="fs-display-xl uppercase mb-xl">Próximos eventos</h1>
-    <div class="events">
-
-      <div class="event">
-        <h2 class="event__title mb-sm">ON AIR</h2>
-        <div class="event__subtitle mb-xs">
-          <p class="event__date">28 ABRIL</p>
-          <span>|</span>
-          <p class="event__hour">12:00 · 22:00</p>
-          <span>|</span>
-          <p class="event__tags">
-            <span>AFRICAN</span>
-            <span>LATIN</span>
-            <span>ELECTRONICA</span>
-          <p>
-        </div>
-        <p class="event__description">Música, talleres y merequetengue. Love Call & LIE Radio en el Parque del Alamillo.</p>
-      </div>
-
-      <div class="event">
-        <h2 class="event__title mb-sm">BARRIO ABIERTO</h2>
-        <div class="event__subtitle mb-xs">
-          <p class="event__date">5 MAYO</p>
-          <span>|</span>
-          <p class="event__hour">12:00 · 23:00</p>
-          <span>|</span>
-          <p class="event__tags">
-            <span>LATIN</span>
-            <span>FOLKLORE</span>
-            <span>HITS</span>
-          <p>
-        </div>
-        <p class="event__description">XI Jornadas de Puertas Abiertas en el Casco Norte de Sevilla</p>
-      </div>
-
     </div>
   </section>
-  <!-- {{ partial "contact" . }} -->
+
+  <section class="upcoming upcoming--events">
+    <div class="container container--medium pt-xl">
+
+      <h1 class="upcoming-title mb-xl ta-center">Próximos Eventos</h1>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="card card--event mb-xl">
+            <div class="card__image">
+              <img src="./images/onair.jpg" alt="Love Call & LIE Radio ON AIR">
+            </div>
+            <h2 class="card__title mv-sm">ON AIR</h2>
+            <div class="card__subtitle">
+              <div class="card__date">
+                <p class="card__day">28 ABRIL</p>
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__hour">12:00 · 22:00</p>
+              </div>
+              <div class="card__tags">
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__tag-list">
+                  <span class="card__tag">AFRICAN</span>
+                  <span class="card__tag">LATIN</span>
+                  <span class="card__tag">ELECTRONICA</span>
+                <p>
+              </div>
+            </div>
+            <p class="card__description">Música, talleres y merequetengue. Love Call & LIE Radio en el Parque del Alamillo.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="card card--event mb-xl">
+            <div class="card__image">
+              <img src="./images/barrioabierto.jpg" alt="Barrio Abierto">
+            </div>
+            <h2 class="card__title mv-sm">BARRIO ABIERTO</h2>
+            <div class="card__subtitle">
+              <div class="card__date">
+                <p class="card__day">4 ABRIL</p>
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__hour">12:00 · 23:00</p>
+              </div>
+              <div class="card__tags">
+                <span class="card__subtitle-divisor">|</span>
+                <p class="card__tag-list">
+                  <span class="card__tag">LATIN</span>
+                  <span class="card__tag">FOLKLORE</span>
+                  <span class="card__tag">HITS</span>
+                <p>
+              </div>
+            </div>
+            <p class="card__description">XI Jornadas de Puertas Abiertas en el Casco Norte de Sevilla.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "contact" . }}
   <!-- {{ partial "youtube-player" . }} -->
 
 </main>

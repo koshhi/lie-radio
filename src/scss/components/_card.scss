@@ -1,0 +1,85 @@
+.card {
+  .card__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card__title {
+    font-family: "BureauGrotesque";
+    font-weight: 500;
+    font-size: units(10);
+    text-transform: uppercase;
+  }
+
+  .card__subtitle {
+    margin-bottom: units(4);
+    @include flex-container ($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+
+    @media #{$screen-md-down} {
+      @include flex-container ($direction: column, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+    }
+
+    @media #{$screen-sm} {
+      @include flex-container ($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+    }
+  }
+
+  .card__tag,
+  .card__day,
+  .card__hour,
+  .card__subtitle-divisor {
+    font-family: "SuisseCondensed";
+    font-weight: 400;
+    font-size: units(4);
+    text-transform: uppercase;
+  }
+
+  .card__description {
+    font-family: "SuisseWorks";
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: units(4);
+  }
+
+  .card__subtitle-divisor {
+    margin: 0 units(4);
+  }
+
+  .card__date,
+  .card__tags {
+    @include flex-container ($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+  }
+
+  .card__tags {
+    @media #{$screen-md-down} {
+      margin-top: units(2);
+    }
+
+    @media #{$screen-sm} {
+      margin-top: units(0);
+    }
+
+    .card__tag {
+      margin-right: units(2);
+
+      &:last-of-type {
+        margin-right: units(0);
+      }
+    }
+
+    .card__subtitle-divisor {
+      @media #{$screen-md-down} {
+        display: none;
+      }
+
+      @media #{$screen-sm} {
+        display: block;
+      }
+    }
+  }
+
+  &.card--event {
+
+  }
+}

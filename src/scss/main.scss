@@ -6,7 +6,9 @@
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/functions";
+@import "commons/breakpoints";
 @import "commons/grid";
+// @import "commons/flexboxgrid";
 @import "commons/fonts";
 @import "commons/animations";
 @import "commons/typography";
@@ -16,6 +18,7 @@
 @import "commons/reset";
 
 //COMPONENTS
+@import "components/card";
 @import "components/events";
 @import "components/header";
 @import "components/navigation";

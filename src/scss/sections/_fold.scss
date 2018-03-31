@@ -6,11 +6,24 @@
     padding: 2rem 0;
     @include flex-container ($direction: row, $wrap: wrap, $justify: center, $align: center);
 
+    @media #{$screen-sm-down} {
+      @include flex-container ($direction: column, $justify: center, $align: center);
+    }
+
     & > li {
       margin-right: units(4);
 
       &:last-of-type {
         margin-right: units(0);
+      }
+
+      @media #{$screen-sm-down} {
+        margin-right: units(0);
+        margin-bottom: units(4);
+
+        &:last-of-type {
+          margin-bottom: units(0);
+        }
       }
     }
   }

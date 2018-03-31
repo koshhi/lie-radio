@@ -1,7 +1,18 @@
-.upcoming-programs,
-.upcoming-events {
-  padding-top: units(20);
-  padding-bottom: units(20);
+.upcoming {
+  .upcoming-title {
+    font-family: "BureauGrotesque";
+    font-weight: 500;
+    font-size: units(15);
+    text-transform: uppercase;
+  }
 
-  @include flex-container ($direction: column, $justify: center, $align: center);
+  &.upcoming--programs {
+    padding-left: units(4);
+    padding-right: units(4);
+  }
+
+  &.upcoming--events {
+    padding-left: units(4);
+    padding-right: units(4);
+  }
 }
