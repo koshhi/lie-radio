@@ -1,9 +1,26 @@
 .navigation {
   &.primary-navigation {
-    @include flex-container ($direction: row, $justify: center, $align: center);
+    @include flex-container ($direction: row, $justify: space-between, $align: center);
   }
 
   .logo {
     height: 40px;
+  }
+
+  .header-links {
+    @include flex-container ($direction: row, $align: center, $justify: flex-end);
+  }
+
+  .header-link {
+    color: white;
+    font-family: "SuisseCondensed";
+    font-weight: 400;
+    font-size: units(4);
+    text-transform: uppercase;
+    margin-left: units(4);
+
+    &:hover {
+      color: #FFE900;
+    }
   }
 }

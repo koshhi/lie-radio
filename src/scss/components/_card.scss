@@ -13,45 +13,70 @@
   }
 
   .card__subtitle {
-    margin-bottom: units(2);
-    @include flex-container ($direction: row, $justify: flex-start, $align: flex-start);
+    margin-bottom: units(4);
+    @include flex-container ($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+
+    @media #{$screen-md-down} {
+      @include flex-container ($direction: column, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+    }
+
+    @media #{$screen-sm} {
+      @include flex-container ($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+    }
   }
 
-  .card__date,
-  .card__hour {
+  .card__tag,
+  .card__day,
+  .card__hour,
+  .card__subtitle-divisor {
     font-family: "SuisseCondensed";
     font-weight: 400;
     font-size: units(4);
     text-transform: uppercase;
-    margin-right: units(4);
-  }
-
-  .card__hour {
-    margin-left: units(4);
-  }
-
-  .card__tags {
-    margin-right: units(0);
-    margin-left: units(4);
-
-    & > span {
-      font-family: "SuisseCondensed";
-      font-weight: 400;
-      font-size: units(4);
-      text-transform: uppercase;
-      margin-right: units(2);
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
   }
 
   .card__description {
     font-family: "SuisseWorks";
+    line-height: 1.5;
     font-weight: 400;
     font-size: units(4);
-    line-height: 1.5;
+  }
+
+  .card__subtitle-divisor {
+    margin: 0 units(4);
+  }
+
+  .card__date,
+  .card__tags {
+    @include flex-container ($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap);
+  }
+
+  .card__tags {
+    @media #{$screen-md-down} {
+      margin-top: units(2);
+    }
+
+    @media #{$screen-sm} {
+      margin-top: units(0);
+    }
+
+    .card__tag {
+      margin-right: units(2);
+
+      &:last-of-type {
+        margin-right: units(0);
+      }
+    }
+
+    .card__subtitle-divisor {
+      @media #{$screen-md-down} {
+        display: none;
+      }
+
+      @media #{$screen-sm} {
+        display: block;
+      }
+    }
   }
 
   &.card--event {

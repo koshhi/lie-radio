@@ -1,0 +1,16 @@
+.contact {
+  .about {
+    font-family: "SuisseWorks";
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: units(4);
+    color: white;
+
+    & > span {
+      font-family: "SuisseCondensed";
+      font-weight: 400;
+      font-size: units(4);
+      text-transform: uppercase;
+    }
+  }
+}
