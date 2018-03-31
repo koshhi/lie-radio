@@ -1,6 +1,12 @@
 .navigation {
   &.primary-navigation {
+    padding-left: units(4);
+    padding-right: units(4);
     @include flex-container ($direction: row, $justify: space-between, $align: center);
+
+    @media #{$screen-md-down} {
+      @include flex-container ($direction: row, $justify: center, $align: center);
+    }
   }
 
   .logo {
@@ -9,13 +15,17 @@
 
   .header-links {
     @include flex-container ($direction: row, $align: center, $justify: flex-end);
+
+    @media #{$screen-sm-down} {
+      display: none;
+    }
   }
 
   .header-link {
     color: white;
-    font-family: "SuisseCondensed";
-    font-weight: 400;
-    font-size: units(4);
+    font-family: "BureauGrotesque";
+    font-weight: 500;
+    font-size: units(5);
     text-transform: uppercase;
     margin-left: units(4);
 
